@@ -1,0 +1,109 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d2f2e5; /* Pale green color */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* White color */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-button,
+.user-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.user-button {
+  position: absolute;
+  right: 30px;
+  top: 0;
+}
+
+.logo-text {
+  margin-left: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #3e3d3d;
+}
+
+.user-icon {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.container {
+  margin-top: 150px; /* Increase the margin-top value to move the table further down */
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 800px; /* Optional: Set a max width for the table */
+  border-radius: 8px; /* Add border radius */
+  overflow: hidden; /* Hide overflowing border-radius */
+  text-align: center;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th:first-child,
+td:first-child {
+  border-top-left-radius: 8px; /* Add border radius to top-left corner */
+}
+
+th:last-child,
+td:last-child {
+  border-top-right-radius: 8px; /* Add border radius to top-right corner */
+  border-bottom: none; /* Remove bottom border for last column */
+}
+
+th {
+  background-color: #3a3737;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #c5e9db; /* Lighter shade of pale green */
+}
+
+.action-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #555;
+}
+
+.arrow-icon {
+  margin-left: 4px;
+}
